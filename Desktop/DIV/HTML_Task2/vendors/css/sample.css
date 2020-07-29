@@ -1,0 +1,75 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+}
+.main-header {
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+}
+header {
+  width: 100%;
+  height: 70px;
+  background-color:#696969;
+  font-size: 1rem;
+}
+header ul {
+    padding: 10px 0;
+    margin:0;
+    list-style: none;
+}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  display: block;
+}
+header li.left{
+  float: left;
+}
+header li.right{
+  float: right;
+}
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ここまでがheader部分の実装 */
+.main-header img {
+   padding: 150px 0;
+}
+.about{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about p{
+  line-height: 30px;
+}
+/* ここから */
+.function {
+  background-color: gray;
+  padding: 40px 0px;
+}
+.function-images {
+  display: table;
+  margin: auto;
+}
+.function-image {
+  display: table-cell;
+  padding: 50px;
+  text-align: center;
+}
+/* ここまでがfunction部分の実装 */
+footer {
+  background-color: #1e3a53;
+  padding: 30px 0px 5px 0px ;
+}
+footer p{
+  color:#fff;
+  font-size: 1rem;
+}
