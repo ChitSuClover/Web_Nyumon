@@ -13,7 +13,7 @@
       <input type="submit" name="送信" >
     </form>
 
-    <% result = connection.exec("select * from crop where give_for!='自家消費';") %>
+    <% result = connection.exec("select * from crops where give_for!='自家消費';") %>
     <% data = [] %>
     <% result.each do |record| %>
     <%  data << "自家消費ではない譲渡先：#{record["give_for"]}" %>
@@ -25,7 +25,7 @@
     </form>
 
 
-    <% result = connection.exec("select * from crop where quality=false;") %>
+    <% result = connection.exec("select * from crops where quality=false;") %>
     <% data = [] %>
     <% result.each do |record| %>
       <%  data << "品質が悪いもの：#{record["quality"]}" %>
@@ -36,7 +36,7 @@
       <input type="submit" name="送信" >
     </form>
 
-    <% result = connection.exec("select * from crop where give_for!='自家消費' and quality=false;") %>
+    <% result = connection.exec("select * from crops where give_for!='自家消費' and quality=false;") %>
     <% data = [] %>
     <% result.each do |record| %>
       <%  data << "自家消費ではない譲渡先：#{record["give_for"]} 品質が悪いもの：#{record["quality"]}" %>
